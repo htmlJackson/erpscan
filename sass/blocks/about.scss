@@ -1,0 +1,30 @@
+.about {
+  padding: 130px 0;
+  &__slogan {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      margin: 0 auto 50px;
+      width: 90px;
+      height: 90px;
+      border: 2px solid #f0f0f0;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #a4a4a4;
+    padding-bottom: 70px;
+  }
+}
+@for $i from 0 to 3 {
+  .about__block:nth-of-type(#{$i + 1}) .about__slogan::before {
+          background : #fff url("../img/header#{$i + 1}.png") no-repeat center;
+  }
+}

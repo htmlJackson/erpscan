@@ -1,0 +1,9 @@
+$dark-blue: #283645;
+$pink: #d22856;
+$font-family: 'OpenSans', 'Arial', sans-serif;
+
+@mixin ul-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

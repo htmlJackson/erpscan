@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/liMarquee.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Тестовое задание</title>
+</head>
+<body>
+  <section class="first-screen">
+    <div class="row">
+      <div class="large-12 columns">
+        <img class="first-screen__logo" src="img/logo.png" alt="CREATIVE BRANDING">
+        <h1 class="first-screen__header">CREATIVE BRANDING</h1>
+        <p class="first-screen__text">Please familiarize yourself with our offer</p>
+        <a href="#" class="button first-screen__button">Read more</a>
+        <a href="#" class="button first-screen__arrow"></a>
+      </div>
+    </div>
+  </section>
+  <nav class="main-menu">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="title-bar main-menu__title" data-responsive-toggle="main-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="top-bar main-menu__bar" id="main-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown  menu" data-dropdown-menu>
+              <li class="menu-text  main-menu__logo">OnePage</li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="about text-center">
+    <div class="row">
+      <div class="medium-4 medium-centered columns">
+        <h2 class="about__header headers">About us</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur <br>  adipisicing elit, sed do eiusmod</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-4 columns about__block">
+        <h4 class="about__slogan">responsive</h4>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod<br>tempor incididunt</p>
+      </div>
+      <div class="medium-4 columns about__block">
+        <h4 class="about__slogan">minimalist</h4>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod<br> tempor incididunt</p>
+      </div>
+      <div class="medium-4 columns about__block">
+        <h4 class="about__slogan">freebies</h4>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod<br>tempor incididunt</p>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio text-center">
+    <div class="row">
+      <div class="medium-4 medium-centered columns">
+        <h2 class="portfolio__header headers">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row medium-uncollapse">
+      <div class="medium-4 columns portfolio__block">
+        <img src="http://placekitten.com/500/190" alt="">
+        <img src="http://placekitten.com/500/280" alt="">
+        <img src="http://placekitten.com/500/190" alt="">
+        <img src="http://placekitten.com/500/190" alt="">
+      </div>
+      <div class="medium-4 columns portfolio__block">
+        <img src="http://placekitten.com/500/190" alt="">
+        <img src="http://placekitten.com/500/190" alt="">
+        <img src="http://placekitten.com/500/200" alt="">
+        <img src="http://placekitten.com/500/340" alt="">
+      </div>
+      <div class="medium-4 columns portfolio__block">
+        <img src="http://placekitten.com/500/190" alt="">
+        <img src="http://placekitten.com/500/340" alt="">
+        <img src="http://placekitten.com/500/200" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-centered medium-4 columns">
+        <a href="#" class="button portfolio__button">Read more</a>
+      </div>
+    </div>
+  </section>
+  <section class="partners text-center">
+    <div class="row">
+      <div class="medium-6 medium-centered columns">
+        <h3 class="partners__header">Thanks for partners</h3>
+          <div class="str_wrap">
+            <img src="img/partner1.png" alt="">
+            <img src="img/partner2.png" alt="">
+            <img src="img/partner3.png" alt="">
+            <img src="img/partner4.png" alt="">
+            <img src="img/partner1.png" alt="">
+            <img src="img/partner2.png" alt="">
+            <img src="img/partner3.png" alt="">
+            <img src="img/partner4.png" alt="">
+          </div>
+        </div>
+    </div>
+
+  </section>
+  <section class="contact text-center">
+    <div class="row">
+      <div class="medium-4 medium-centered columns">
+        <h2 class="contact__header headers">Contact</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-6 columns form  text-left">
+        <form id="contactForm" name="contactForm">
+          <div class="row">
+            <div class="medium-6 columns">
+              <label class="form__label">Your name
+                <input type="text" placeholder="Type your name here">
+              </label>
+            </div>
+            <div class="medium-6 columns">
+              <label class="form__label">Your e-mail
+                <input type="text" placeholder="Type your e-mail here">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-12 columns text-right">
+              <label class="form__label text-left">
+                Message
+                <textarea placeholder="Type your message here" rows="4"></textarea>
+              </label>
+              <button class="form__submit" type="submit">Send</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="medium-3 columns end text-left">
+        <p>To contact us please use the contact form visible</p>
+        <p>Tomasz Mazurczak</p>
+        <p>e-mail: contact@thomsoon.com</p>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer">
+
+  </footer>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/liMarquee.js"></script>
+</body>
+</html>

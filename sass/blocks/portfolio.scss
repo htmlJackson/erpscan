@@ -1,0 +1,25 @@
+.portfolio {
+  padding: 130px 0;
+  background: #f3f3f3;
+  &__header {
+    padding-bottom: 70px;
+  }
+  &__block img {
+    padding-bottom: 20px;
+    @media (min-width: 799px) {
+    &:last-child {
+      padding-bottom: 0;
+    }
+    }
+  }
+  &__button {
+    color: #000;
+    border-color: #000;
+    background: transparent;
+    &:hover, &:focus {
+      color: #fff;
+      background: #000;
+      border-color: #fff;
+    }
+  }
+}

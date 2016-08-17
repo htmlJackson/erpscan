@@ -1,0 +1,13 @@
+.partners {
+  background: #474747;
+  padding: 90px 0;
+  &__header {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 90px;
+  }
+  & img {
+    padding-right: 100px;
+  }
+}
