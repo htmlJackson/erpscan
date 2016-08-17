@@ -1,3 +1,18 @@
 .contact {
   padding: 180px 0 100px;
+  &__mailto {
+    color: #000;
+    font-weight: bold;
+  }
+  &__author {
+    font-weight: bold;
+  }
+  &__social {
+    @include ul-reset;
+    font-size: 0;
+    & li {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
 }

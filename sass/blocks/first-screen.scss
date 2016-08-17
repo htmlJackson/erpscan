@@ -9,6 +9,8 @@
   }
   &__header {
     font-size: 34px;
+    letter-spacing: 5px;
+    font-family: "MyriadProRegular", serif;
     padding-top: 140px;
     margin: 0;
     &::after {
@@ -38,7 +40,7 @@
     display: block;
     width: 200px;
     height: 10px;
-    margin: 70px auto 0;
+    margin: 70px auto 150px;
     background: url(../img/arrow-down.png) no-repeat center;
     &:hover, &:visited {
       background-color: #6e6e6e;

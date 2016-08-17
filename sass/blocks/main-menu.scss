@@ -1,10 +1,28 @@
 .main-menu {
-      background: #797979;
+      background: #fff;
+      border-bottom: 1px solid #f2f2f2;
   &__title {
-
     background: #797979;
   }
   &__bar, &__bar ul {
     background: #fff;
+  }
+  & a {
+    color: #000;
+    text-transform: uppercase;
+    -webkit-transition: all ease-out 0.2s;
+    -ms-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+  }
+  & a:hover, & a.current {
+    color: rgb(183, 172, 133);
+    -webkit-transition: all ease-out 0.2s;
+    -ms-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+  }
+  @media (max-width: 420px) {
+    &__bar ul li {
+      display: block;
+    }
   }
 }

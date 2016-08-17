@@ -1,16 +1,18 @@
 body {
-  font-family: $font-family;
-  color: $dark-blue;
+  font-family: "MyriadProRegular", serif;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
 .headers {
   font-size: 34px;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: "LatoBold", serif;
+  letter-spacing: 5px;
   &::after {
     content: "";
     display: block;
@@ -20,10 +22,21 @@ img {
     background: #000;
   }
 }
+
 .button {
   display: block;
   width: 185px;
   margin: 0 auto;
   font-size: 16px;
   margin-top: 160px;
+  text-transform: uppercase;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }

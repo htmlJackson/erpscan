@@ -11,19 +11,19 @@
   <title>Тестовое задание</title>
 </head>
 <body>
-  <section class="first-screen">
+  <section class="first-screen" id="home">
     <div class="row">
       <div class="large-12 columns">
         <img class="first-screen__logo" src="img/logo.png" alt="CREATIVE BRANDING">
         <h1 class="first-screen__header">CREATIVE BRANDING</h1>
         <p class="first-screen__text">Please familiarize yourself with our offer</p>
         <a href="#" class="button first-screen__button">Read more</a>
-        <a href="#" class="button first-screen__arrow"></a>
+        <a href="#about" class="button first-screen__arrow"></a>
       </div>
     </div>
   </section>
-  <nav class="main-menu">
-    <div class="row">
+  <nav class="main-menu nav">
+    <div class="row small-collapse">
       <div class="large-12 columns">
         <div class="title-bar main-menu__title" data-responsive-toggle="main-menu" data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle></button>
@@ -32,22 +32,23 @@
         <div class="top-bar main-menu__bar" id="main-menu">
           <div class="top-bar-left">
             <ul class="dropdown  menu" data-dropdown-menu>
-              <li class="menu-text  main-menu__logo">OnePage</li>
+              <li class="menu-text  main-menu__logo">Onepage</li>
             </ul>
           </div>
-          <div class="top-bar-right">
+          <div class="top-bar-right" id="gmenu">
             <ul class="menu">
-              <li><a href="#">home</a></li>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about us</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </nav>
-  <section class="about text-center">
+
+  <section class="about text-center" id="about">
     <div class="row">
       <div class="medium-4 medium-centered columns">
         <h2 class="about__header headers">About us</h2>
@@ -69,7 +70,7 @@
       </div>
     </div>
   </section>
-  <section class="portfolio text-center">
+  <section class="portfolio text-center" id="portfolio">
     <div class="row">
       <div class="medium-4 medium-centered columns">
         <h2 class="portfolio__header headers">Portfolio</h2>
@@ -116,9 +117,8 @@
           </div>
         </div>
     </div>
-
   </section>
-  <section class="contact text-center">
+  <section class="contact text-center" id="contact">
     <div class="row">
       <div class="medium-4 medium-centered columns">
         <h2 class="contact__header headers">Contact</h2>
@@ -126,7 +126,7 @@
     </div>
     <div class="row">
       <div class="medium-6 columns form  text-left">
-        <form id="contactForm" name="contactForm">
+        <form id="contactForm" name="contactForm" method="POST" action="#">
           <div class="row">
             <div class="medium-6 columns">
               <label class="form__label">Your name
@@ -148,23 +148,43 @@
               <button class="form__submit" type="submit">Send</button>
             </div>
           </div>
-
         </form>
       </div>
-      <div class="medium-3 columns end text-left">
-        <p>To contact us please use the contact form visible</p>
-        <p>Tomasz Mazurczak</p>
-        <p>e-mail: contact@thomsoon.com</p>
+      <div class="medium-6 columns text-left">
+        <p class="contact__text">To contact us please use the contact form visible</p>
+        <p class="contact__text contact__author">Tomasz Mazurczak</p>
+        <p class="contact__text">e-mail: <a href="mailto:contact@thomsoon.com" class="contact__mailto">contact@thomsoon.com</p>
+          <ul class="contact__social">
+            <li class="contact__icon contact__google"><a href="http://google.com" target="_blank"></a></li>
+            <li class="contact__icon contact__fb"><a href="http://google.com" target="_blank"></a></li>
+            <li class="contact__icon contact__behance"><a href="http://google.com" target="_blank"></a></li>
+            <li class="contact__icon contact__dribbble"><a href="http://google.com" target="_blank"></a></li>
+        </ul>
       </div>
     </div>
   </section>
   <footer class="page-footer">
-
+    <div class="row">
+      <div class="large-12 columns">
+        <img class="page-footer__logo" src="img/logo-grey.png" alt="CREATIVE BRANDING">
+        <ul class="page-footer__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Privacy policy</a></li>
+          <li><a href="#home">RSS</a></li>
+          <li><a href="#home">Facebook</a></li>
+          <li><a href="#home">Dribbble</a></li>
+          <li><a href="#home">Twitter</a></li>
+          <li><a href="#home">Contact</a></li>
+        </ul>
+        <p class="page-footer__sign">© 2014. All Rights Reserved Thomsoon.com</p>
+      </div>
+    </div>
   </footer>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
   <script src="js/app.js"></script>
   <script src="js/liMarquee.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

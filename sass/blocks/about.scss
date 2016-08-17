@@ -2,6 +2,8 @@
   padding: 130px 0;
   &__slogan {
     font-size: 26px;
+    font-family: "LatoRegular", serif;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: #000;
     position: relative;
@@ -21,6 +23,7 @@
     line-height: 26px;
     color: #a4a4a4;
     padding-bottom: 70px;
+    font-family: "LatoLight", serif;
   }
 }
 @for $i from 0 to 3 {
